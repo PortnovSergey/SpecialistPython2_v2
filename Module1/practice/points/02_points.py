@@ -23,4 +23,8 @@ for point in points:
     if max < point.dist(zero_point):
         max = point.dist(zero_point)
 
-print("Координаты наиболее удаленной точки = ", max)
+for point in points:
+    if max == point.dist(zero_point):
+        ret_point = point
+
+print("Координаты наиболее удаленной точки = ", ret_point.x, ret_point.y )
